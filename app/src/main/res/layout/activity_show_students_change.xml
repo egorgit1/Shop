@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".activities.MainActivity">
+
+    <EditText
+        android:id="@+id/edSearch"
+        android:layout_width="200dp"
+        android:textColor="@color/black"
+        android:hint="@string/search"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:inputType="text"
+        android:layout_marginRight="85dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/black"
+        android:text="@string/button_search"
+        android:layout_marginStart="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/edSearch"
+        app:layout_constraintTop_toTopOf="@+id/edSearch"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/edSearch"
+        app:layout_constraintRight_toRightOf="@id/bSearch"
+        app:layout_constraintTop_toBottomOf="@id/edSearch">
+
+        <AutoCompleteTextView
+            android:id="@+id/atv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none"
+            android:text="Фамилия" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

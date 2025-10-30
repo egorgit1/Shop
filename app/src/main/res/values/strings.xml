@@ -1,0 +1,51 @@
+<resources>
+    <string name="hello_registration">Введите логин/пароль</string>
+    <string name="button_registrate">Зарегистрировать</string>
+    <string name="button_login">Войти</string>
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="patronymic">Отчество</string>
+    <string name="role">Должность</string>
+    <string name="login">Логин</string>
+    <string name="result">Общий балл</string>
+    <string name="admin_passport_id">КК00</string>
+    <string name="password">Пароль</string>
+    <string name="passport_id">Номер паспорта</string>
+    <string name="registrate">Регистрация</string>
+    <string name="key_for_user">user</string>
+    <string name="key_for_admin">admin</string>
+    <string name="menu_name">Университет</string>
+    <string name="warning_for_ed">Поле должно быть заполнено!</string>
+    <string name="warning_for_passport">Паспортные данные введены неверно!</string>
+    <string name="warning_for_login">Данные введены неверно!</string>
+    <string name="warning_for_search">Введите не менее 2 символов!</string>
+    <string name="menu_admin">Меню администратора</string>
+    <string name="menu_user">Меню сотрудника</string>
+    <string name="menu_student">Меню абитуриента</string>
+    <string name="search">Поиск</string>
+    <string name="delete">Удалить</string>
+    <string name="key_for_result">result</string>
+    <string name="button_search">Найти</string>
+    <string name="show_db_students">Просмотреть список абитуриентов</string>
+    <string name="show_db_users">Просмотреть список сотрудников</string>
+    <string name="change_db_users">Изменить данные сотрудника</string>
+    <string name="add_user">Добавить сотрудника</string>
+    <string name="change">Изменить</string>
+    <string name="show_specialities">Просмотреть специальности</string>
+    <string name="choose_specialization">Выберите специальность</string>
+    <string name="add_student">Добавить абитуриента</string>
+    <string name="change_db_students">Изменить данные абитуриента</string>
+    <string-array name="specialities">
+        <item>Экономика</item>
+        <item>Математика</item>
+        <item>Информатика</item>
+        <item>Инженерия</item>
+        <item>Филология</item>
+    </string-array>
+    <string-array name="conditions">
+        <item>Фамилия</item>
+        <item>Имя</item>
+        <item>Отчество</item>
+        <item>Паспорт</item>
+    </string-array>
+</resources>
